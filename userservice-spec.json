@@ -1,0 +1,43 @@
+{
+  "openapi" : "3.0.2",
+  "info" : {
+    "title" : "fisuser-service",
+    "description" : "The API service contain users information ",
+    "version" : "1.0.0"
+  },
+  "paths" : {
+    "/cicd/user/{id}" : {
+      "get" : {
+        "tags" : [ "user" ],
+        "description" : "get the user information on basis of id",
+        "operationId" : "getuser",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "data recieved"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        }
+      } ]
+    }
+  },
+  "components" : { },
+  "tags" : [ {
+    "name" : "user",
+    "description" : "user service"
+  } ]
+}
