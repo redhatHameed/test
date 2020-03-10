@@ -3,13 +3,16 @@
 
 **Step 1: SSH to internal registry server and set environment variables:**
 
-```bash
 
-APP_REGISTRY="<>"
-APP_REGISTRY_ORG="<>"
-INTERNAL_REGISTRY="<>"
 
-``` 
+| variable | description  |
+|---|---|
+| APP_REGISTRY  |    |
+| APP_REGISTRY_ORG  |    |
+| INTERNAL_REGISTRY  |    |
+| AUTH_TOKEN  | quay.io or registry token you have to Download/pull Catalogs if private repo   |
+
+ 
 e.g.
 
 ```bash
